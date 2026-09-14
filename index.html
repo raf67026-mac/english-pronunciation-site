@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مشغّل النطق</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Libre+Franklin:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+  <p class="eyebrow">الدورة الإنجليزية الكاملة &middot; النطق</p>
+  <div class="bars" id="bars"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <input class="field" id="wordInput" type="text" value="" placeholder="اكتب كلمة أو جملة..." autocomplete="off" spellcheck="false">
+  <button class="playbtn" id="playBtn" type="button">&#128266; <span id="playLabel">تشغيل</span></button>
+  <div class="speeds" role="group" aria-label="السرعة">
+    <button class="speedBtn" data-speed="0.5" type="button">0.50&times;</button>
+    <button class="speedBtn" data-speed="0.75" type="button">0.75&times;</button>
+    <button class="speedBtn" data-speed="0.9" type="button">0.90&times;</button>
+    <button class="speedBtn" data-speed="1" type="button">1.00&times;</button>
+  </div>
+  <div class="accents" role="group" aria-label="اللهجة">
+    <button id="accUS" type="button">&#127482;&#127480; أمريكي</button>
+    <button id="accGB" type="button">&#127468;&#127463; بريطاني</button>
+  </div>
+  <p class="status" id="status" aria-live="polite"></p>
+  <div class="about" id="about"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
